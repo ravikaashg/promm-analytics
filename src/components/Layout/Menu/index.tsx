@@ -87,10 +87,7 @@ export default function Menu(): JSX.Element {
           <Divider />
 
           <ExternalMenu
-            href={addNetworkIdQueryString(
-              process.env.REACT_APP_DMM_SWAP_URL || 'https://kyberswap.com',
-              activeNetworks
-            )}
+            href={addNetworkIdQueryString(process.env.REACT_APP_DMM_SWAP_URL || 'https://lillion.org', activeNetworks)}
           >
             <Repeat size={16} />
             Swap
@@ -106,7 +103,7 @@ export default function Menu(): JSX.Element {
           <div>
             <ThemeToggle />
             <SocialLinks />
-            <KyberNetworkLink href="https://kyber.network">Kyber Network</KyberNetworkLink>
+            <KyberNetworkLink href="https://lillion.org">Lillion DeFi</KyberNetworkLink>
           </div>
         </MenuFlyout>
       )}
