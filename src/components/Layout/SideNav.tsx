@@ -368,11 +368,6 @@ function SideNav(): JSX.Element {
                 style={{ marginTop: '2px' }}
               />
             </DMMIcon>
-            <UnSelectable>
-              <Text fontSize="12px" color={theme.subText} textAlign="right" marginTop="-12px">
-                Elastic Analytics
-              </Text>
-            </UnSelectable>
           </div>
           <Flex marginTop="1.5rem" alignItems="flex-start" width="100%">
             <Text fontSize={16} fontWeight="500" color={theme.subText}>
@@ -408,7 +403,7 @@ function SideNav(): JSX.Element {
 
             <ExternalMenu
               href={addNetworkIdQueryString(
-                process.env.REACT_APP_DMM_SWAP_URL || 'https://kyberswap.com',
+                process.env.REACT_APP_DMM_SWAP_URL || 'https://lillion.org',
                 isAllChain ? NETWORKS_INFO_MAP[ChainId.ETHEREUM] : activeNetworks[0]
               )}
             >
@@ -426,7 +421,7 @@ function SideNav(): JSX.Element {
         <div>
           <ThemeToggle />
           <SocialLinks />
-          <KyberNetworkLink href="https://kyber.network">Kyber Network</KyberNetworkLink>
+          <KyberNetworkLink href="https://lillion.org">Lillion deFi</KyberNetworkLink>
           <Polling>
             <PollingDot />
             <a href="/elastic" style={{ textDecoration: 'none' }}>
