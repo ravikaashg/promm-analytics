@@ -124,7 +124,7 @@ type PoolLinkInfo =
     }
 
 export function getPoolLink(info: PoolLinkInfo, networkInfo: NetworkInfo): string {
-  const swapURL = (process.env.REACT_APP_DMM_SWAP_URL || 'https://kyberswap.com') + '/elastic'
+  const swapURL = (process.env.REACT_APP_DMM_SWAP_URL || 'https://lillion.org') + '/elastic'
   let resultURL
 
   if (info.type === 'remove') {
