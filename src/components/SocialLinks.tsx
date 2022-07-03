@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { ExternalLink } from 'theme'
 
-import { Twitter, Discord, Medium, Telegram } from 'components/Icons'
+import { Twitter, Medium, Telegram } from 'components/Icons'
 import useTheme from 'hooks/useTheme'
 
 const StyledSocialLinks = styled.div`
@@ -19,25 +19,19 @@ const SocialLinks = (): JSX.Element => {
   const theme = useTheme()
   return (
     <StyledSocialLinks>
-      <ExternalLink href="https://t.me/kybernetwork">
+      <ExternalLink href="https://t.me/lillionorg">
         <StyledIcon>
           <Telegram size={16} color={theme.subText} />
         </StyledIcon>
       </ExternalLink>
 
-      <ExternalLink href="https://twitter.com/kybernetwork">
+      <ExternalLink href="https://twitter.com/lillionorg">
         <StyledIcon>
           <Twitter height={16} width={16} color={theme.subText} />
         </StyledIcon>
       </ExternalLink>
 
-      <ExternalLink href="https://discord.com/invite/NB3vc8J9uv">
-        <StyledIcon>
-          <Discord height={16} width={16} color={theme.subText} />
-        </StyledIcon>
-      </ExternalLink>
-
-      <ExternalLink href="https://medium.com/@kyberteam">
+      <ExternalLink href="https://lillion.medium.com/">
         <StyledIcon>
           <Medium height={16} width={16} color={theme.subText} />
         </StyledIcon>
